@@ -1,0 +1,18 @@
+.por {
+  position: relative;
+}
+.poa {
+  position: absolute;
+}
+.pof {
+  position: fixed;
+}
+.hid {
+  overflow: hidden;
+}
+.all {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/*# sourceMappingURL=base.css.map */

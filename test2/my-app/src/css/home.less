@@ -1,0 +1,201 @@
+
+
+@import (reference) url(base);
+@url:"../images/";
+
+.container{
+  .px2rem(width, 710);
+  margin: auto;
+}
+
+
+.nav-box{
+  .all;
+  height: 47px;
+  box-sizing: border-box;
+  display: flex;
+  display: grid;
+  grid-template-columns: 46px auto 28px;
+  .nav-logo{
+    width: 47px;
+    font-size: 0;
+    display: inline-block;
+    background-image: url("@{url}logo_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .nav-list{
+    .px2rem(padding-right, 28);
+    flex: 1;
+    box-sizing: border-box;
+    text-align: right;
+    height: 47px;
+    .nav-cell{
+      .px2rem(font-size, 29);
+      display: inline-block;
+      //float: right;
+      text-align: center;
+      padding-left: 10px;
+      line-height: 47px;
+      vertical-align: top;
+    }
+  }
+  .nav-search{
+    width: 28px;
+    background-image: url("@{url}search_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 16px;
+  }
+}
+
+
+.bannerSwiper{
+  .all;
+  .banner-list{
+    .all;
+    .banner-cell{
+      .all;
+      font-size: 0px;
+      img{
+        .all;
+      }
+    }
+  }
+}
+
+
+.movie-box{
+  .all;
+  .movie-floor{
+    .all;
+    .movie-title{
+      .all;
+      //font-size: 0px;
+      //.px2rem(height, 45);
+      //.px2rem(line-height, 45);
+      .movie-txt{
+        height: 45px;
+        line-height: 45px;
+        float: left;
+        //display: inline-block;
+        color: @111;
+        .px2rem(font-size, 32);
+      }
+      .movie-more{
+        height: 45px;
+        line-height: 45px;
+        float: right;
+        //display: inline-block;
+        color: @42b;
+        .px2rem(font-size, 32);
+      }
+    }
+    .movie-layer{
+      .hid;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+      .movie-list{
+        .flexbox;
+        align-items: flex-start;
+        .movie-cell{
+          .flexauto;
+          flex-shrink: 0;
+          .px2rem(width, 200);
+          .movie-img{
+            .all;
+            .px2rem(padding-top, 285.69);
+            img{
+              .all;
+              height: @full;
+              .colcenter;
+            }
+          }
+          .movie-name{
+            .px2rem(margin-top, 15);
+            .px2rem(font-size, 28);
+            text-align: center;
+          }
+          .movie-star{}
+          &:not(:nth-last-of-type(1)){
+            .px2rem(margin-right, 15);
+          }
+        }
+        .movie-tag{
+          .por;
+
+          .flexauto;
+          flex-shrink: 0;
+          .px2rem(font-size, 27);
+          .px2rem(margin-right, 24);
+          .px2rem(margin-bottom, 26);
+          .px2rem(padding-top, 34);
+          .px2rem(padding-bottom, 34);
+          .px2rem(padding-left, 48);
+          .px2rem(padding-right, 48);
+          //border: 1px solid red;
+          //border-radius: 5px;
+          &:after{
+            content: "";
+            .poa; left: 0%;
+            top: 0%;
+            display: block;
+            width: 198%;
+            height: 198%;
+            border: 1px solid red;
+            border-radius: 10px;
+            box-sizing: border-box;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+          }
+          //.border1px(@color: red);
+        }
+      }
+      .movie-types{
+        .all;
+        .flexbox;
+        flex-wrap: wrap;
+        .movie-tp{
+          width: calc( @full / 2);
+          box-sizing: border-box;
+          .movie-kind{
+            .por;
+            .hid;
+            .px2rem(height, 86);
+            .px2rem(line-height, 86);
+            .px2rem(font-size, 30);
+            color: @42b;
+            border-top: solid 1px #eee;
+            .icon-right{
+              .por;
+              .px2rem(width, 15);
+              .px2rem(height, 15);
+              .px2rem(margin-top, 36);
+              .px2rem(margin-right, 28);
+              color: #ccc;
+              float: right;
+              font-weight: bold;
+              display: inline-block;
+              border-right: solid 1px #ccc;
+              border-bottom: solid 1px #ccc;
+              transform: rotate(-45deg);
+            }
+          }
+          &:nth-of-type(even){
+            .movie-kind{
+              .px2rem(padding-left, 32);
+            }
+          }
+          &:not(:nth-of-type(even)){
+            border-right: solid 1px #eee;
+          }
+        }
+      }
+    }
+  }
+}

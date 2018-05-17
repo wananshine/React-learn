@@ -1,0 +1,220 @@
+.container {
+  width: 7.1rem;
+  margin: auto;
+}
+.nav-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 47px;
+  box-sizing: border-box;
+  display: flex;
+  display: grid;
+  grid-template-columns: 46px auto 28px;
+}
+.nav-box .nav-logo {
+  width: 47px;
+  font-size: 0;
+  display: inline-block;
+  background-image: url("../images/logo_01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.nav-box .nav-list {
+  padding-right: 0.28rem;
+  flex: 1;
+  box-sizing: border-box;
+  text-align: right;
+  height: 47px;
+}
+.nav-box .nav-list .nav-cell {
+  font-size: 0.29rem;
+  display: inline-block;
+  text-align: center;
+  padding-left: 10px;
+  line-height: 47px;
+  vertical-align: top;
+}
+.nav-box .nav-search {
+  width: 28px;
+  background-image: url("../images/search_01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 16px;
+}
+.bannerSwiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bannerSwiper .banner-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bannerSwiper .banner-list .banner-cell {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 0px;
+}
+.bannerSwiper .banner-list .banner-cell img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.movie-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.movie-box .movie-floor {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.movie-box .movie-floor .movie-title {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.movie-box .movie-floor .movie-title .movie-txt {
+  height: 45px;
+  line-height: 45px;
+  float: left;
+  color: #111111;
+  font-size: 0.32rem;
+}
+.movie-box .movie-floor .movie-title .movie-more {
+  height: 45px;
+  line-height: 45px;
+  float: right;
+  color: #42bd56;
+  font-size: 0.32rem;
+}
+.movie-box .movie-floor .movie-layer {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.movie-box .movie-floor .movie-layer::-webkit-scrollbar {
+  width: 0px;
+}
+.movie-box .movie-floor .movie-layer .movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-cell {
+  flex-grow: 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex-shrink: 0;
+  width: 2rem;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-cell .movie-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 2.8569rem;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-cell .movie-img img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-cell .movie-name {
+  margin-top: 0.15rem;
+  font-size: 0.28rem;
+  text-align: center;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-cell:not(:nth-last-of-type(1)) {
+  margin-right: 0.15rem;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-tag {
+  position: relative;
+  flex-grow: 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex-shrink: 0;
+  font-size: 0.27rem;
+  margin-right: 0.24rem;
+  margin-bottom: 0.26rem;
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+  padding-left: 0.48rem;
+  padding-right: 0.48rem;
+}
+.movie-box .movie-floor .movie-layer .movie-list .movie-tag:after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: block;
+  width: 198%;
+  height: 198%;
+  border: 1px solid red;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.movie-box .movie-floor .movie-layer .movie-types {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.movie-box .movie-floor .movie-layer .movie-types .movie-tp {
+  width: calc(100% / 2);
+  box-sizing: border-box;
+}
+.movie-box .movie-floor .movie-layer .movie-types .movie-tp .movie-kind {
+  position: relative;
+  overflow: hidden;
+  height: 0.86rem;
+  line-height: 0.86rem;
+  font-size: 0.3rem;
+  color: #42bd56;
+  border-top: solid 1px #eee;
+}
+.movie-box .movie-floor .movie-layer .movie-types .movie-tp .movie-kind .icon-right {
+  position: relative;
+  width: 0.15rem;
+  height: 0.15rem;
+  margin-top: 0.36rem;
+  margin-right: 0.28rem;
+  color: #ccc;
+  float: right;
+  font-weight: bold;
+  display: inline-block;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  transform: rotate(-45deg);
+}
+.movie-box .movie-floor .movie-layer .movie-types .movie-tp:nth-of-type(even) .movie-kind {
+  padding-left: 0.32rem;
+}
+.movie-box .movie-floor .movie-layer .movie-types .movie-tp:not(:nth-of-type(even)) {
+  border-right: solid 1px #eee;
+}
+/*# sourceMappingURL=home.css.map */
