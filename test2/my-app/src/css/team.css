@@ -1,0 +1,14 @@
+.container {
+  width: 7.1rem;
+  margin: auto;
+}
+.team-box {
+  width: 7.1rem;
+  margin: auto;
+}
+.team-box .team-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/*# sourceMappingURL=team.css.map */

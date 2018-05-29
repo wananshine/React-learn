@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter  } from 'react-router-dom'
-
-
+import { BrowserRouter, Switch, Route  } from 'react-router-dom'
+import axios from 'axios'
 
 import './css/reset.css';
-import './css/home.css';
 // import './index.css';
-import App from './App';
+
 import registerServiceWorker from './registerServiceWorker';
 
 
+import App from './App';
 import Navlist from './tempalte/ssi/nav';
 import Homepage from './tempalte/home/home';
+import Bookpage from './tempalte/book/book';
+import TeamPage from './tempalte/team/team';
 
 
 
@@ -30,14 +31,14 @@ registerServiceWorker();
 
 
 const tabKey = {
-    tbBovie: "movie",
+    tbMovie: "movie",
     tbBook:  "Book",
     tbRadio: "aRadio",
     tbTeam:  "Team"
 }
 
 
-//
+//没添加路由
 class TagBox extends React.Component{
 
     render(){
@@ -48,20 +49,47 @@ class TagBox extends React.Component{
         )
     }
 }
-
-
 const ele = (
     <div className="container">
         <Navlist tabKey={tabKey}/>
-        <BrowserRouter>
-            <Homepage />
-        </BrowserRouter>
+        <Homepage />
     </div>
 )
 
 
 
+//添加路由
+class ArticleBox extends  React.Component{
+    render(){
+        return(
+            <main>
+                <Switch>
+                    <Route exact path='/' component={Homepage}/>
+                    {/* both /roster and /roster/:number begin with /roster */}
+                    <Route path='/roster' component={Bookpage}/>
+                    <Route path='/schedule' component={Bookpage}/>
+                    <Route path='/teampage' component={TeamPage}/>
+                </Switch>
+            </main>
+        )
+    }
+}
+
+const ContainerBox = ()=>(
+    <div>
+        <Navlist tabKey={tabKey}/>
+        <ArticleBox />
+    </div>
+)
+
+
+
+
+
+
 ReactDOM.render(
-    ele,
+    <BrowserRouter>
+        <ContainerBox />
+    </BrowserRouter>,
     document.querySelector("#root")
 )

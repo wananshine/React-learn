@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../../css/reset.css';
+
+// import '../../css/reset.css';
 import '../../css/home.css';
+
 import Navlist from '../ssi/nav';
 
 
 /**************************************************/
 
-
+import { get, get2 } from '../../api/api'
 
 
 const movieHot = [
@@ -115,6 +117,25 @@ class Bannerlist extends React.Component{
 //floor  影院热映
 class Moviehot extends React.Component{
 
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+    }
+
+    componentDidMount() {
+        get('../data/movie.json')
+            .then((data)=>{
+                console.log('res',data)
+            })
+            .catch((err)=>{
+                console.log('err',err)
+            })
+    }
+
+    componentWillUnmount() {
+
+    }
+
     render(){
         let movieList = this.props.movieHot;
         const listItems = movieList.map((item, index) =>
@@ -153,7 +174,6 @@ function ListItem(props) {
         </li>
     )
 }
-
 
 
 //floor  免费在线电影
