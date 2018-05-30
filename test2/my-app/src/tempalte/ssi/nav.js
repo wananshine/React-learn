@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Link  } from 'react-router-dom'
 
+import '../../css/head-nav.css'
+
 
 const tabName = {
     tMovie: "电影",
@@ -28,10 +30,10 @@ function Navlist(props) {
         <nav className="nav-box">
             <div className="nav-logo"></div>
             <div className="nav-list">
-                <span className="nav-cell" data-key={tabKey.tbMovie}  style={{color: tabMovie }}><Link to='/'>{tabName.tMovie}</Link></span>
-                <span className="nav-cell" data-key={tabKey.tbBook}   style={tabBook}           ><Link to='/roster'>{tabName.tBook}</Link></span>
-                <span className="nav-cell" data-key={tabKey.tabRadio} style={{color: '#E4A813'}}><Link to='/schedule'>{tabName.tRadio}</Link></span>
-                <span className="nav-cell" data-key={tabKey.tbTeam}   style={{color: tabTeam}}  ><Link to='/teampage'>{tabName.tTeam}</Link></span>
+                <span className="nav-cell" data-key={tabKey.tbMovie}  ><Link to='/'       style={{color: tabMovie }}>{tabName.tMovie}</Link></span>
+                <span className="nav-cell" data-key={tabKey.tbBook}   ><Link to='/roster' style={tabBook}>{tabName.tBook}</Link></span>
+                <span className="nav-cell" data-key={tabKey.tabRadio} ><Link to='/schedule' style={{color: '#E4A813'}}>{tabName.tRadio}</Link></span>
+                <span className="nav-cell" data-key={tabKey.tbTeam}   ><Link to='/teampage' style={{color: tabTeam}}>{tabName.tTeam}</Link></span>
             </div>
             <div className="nav-search" ></div>
         </nav>

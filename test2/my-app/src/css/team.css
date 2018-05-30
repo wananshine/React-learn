@@ -2,13 +2,133 @@
   width: 7.1rem;
   margin: auto;
 }
-.team-box {
+.team {
   width: 7.1rem;
   margin: auto;
 }
-.team-box .team-list {
+.team-box {
+  position: relative;
+  overflow: hidden;
+}
+.team-box .team-floor {
   width: 100%;
   position: relative;
   overflow: hidden;
+  margin-top: 0.62rem;
+}
+.team-box .team-floor .team-title {
+  font-size: 0.38rem;
+}
+.team-box .team-floor .team-item .team-cell {
+  padding-bottom: 0.28rem;
+  position: relative;
+  zoom: 1;
+}
+.team-box .team-floor .team-item .team-cell:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-info {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.28rem;
+  margin-bottom: 0.26rem;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-info .team-cell-img {
+  position: relative;
+  overflow: hidden;
+  width: 0.88rem;
+  height: 0.88rem;
+  border-radius: 2px;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-info .team-cell-img img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-info .team-cell-name {
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  flex-basis: auto;
+  flex-shrink: 1;
+  font-size: 0.38rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-info .team-cell-member {
+  width: auto;
+  font-size: 0.32rem;
+  color: #aaaaaa;
+  vertical-align: middle;
+  display: table-cell;
+}
+.team-box .team-floor .team-item .team-cell .team-cell-txt {
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.32rem;
+  color: #aaaaaa;
+}
+.team-box .team-floor .team-more {
+  padding-top: 0.28rem;
+  padding-bottom: 0.28rem;
+  font-size: 0.32rem;
+  position: relative;
+  zoom: 1;
+  text-align: center;
+  color: #42bd56;
+}
+.team-box .team-floor .team-more:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
 }
 /*# sourceMappingURL=team.css.map */

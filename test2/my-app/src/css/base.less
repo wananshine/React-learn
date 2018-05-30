@@ -5,6 +5,9 @@
 @42b: #42bd56;
 
 @111: #111111;
+@aaa: #aaaaaa;
+
+@e8: #e8e8e8;
 
 
 .por{
@@ -92,6 +95,7 @@
 //border-1px
 .border1px(@color: #444){
   .por;
+  zoom: 1;
   &:after{
     content: "";
     .poa; top: 0; left: 0;
@@ -99,6 +103,29 @@
     height: 200%;
     pointer-events: none;
     border: 1px solid @color;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+}
+
+//border-1px
+.bor1px(@tc: @e8, @bc: @e8, @lc: @e8, @rc: @e8){
+  .por;
+  zoom: 1;
+  &:after{
+    content: "";
+    .poa; top: 0; left: 0;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+    border-top: 1px solid @tc;
+    border-bottom: 1px solid @bc;
+    border-left: 1px solid @lc;
+    border-right: 1px solid @rc;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transform: scale(0.5);

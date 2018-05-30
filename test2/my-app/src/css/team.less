@@ -1,28 +1,77 @@
 @import (reference) url(base);
 @url:"../images/";
-
-
-
-
 .container{
   .px2rem(width, 710);
   margin: auto;
 }
 
+
+.team{
+  .container;
+}
+
+
 .team-box{
-  .px2rem(width, 710);
-  margin: auto;
-  .team-list{
+  .por;
+  .hid;
+  .team-floor{
     .all;
-    .team-title{}
+    .px2rem(margin-top, 62);
+    .team-title{
+      .px2rem(font-size, 38);
+    }
     .team-item{
       .team-cell{
+        .px2rem(padding-bottom, 28);
+        .bor1px(@tc: transparent, @rc: transparent, @lc: transparent);
         .team-cell-info{
-          .team-cell-img{}
-          .team-cell-name{}
+          .por;
+          .hid;
+          .flexbox;
+          .px2rem(margin-top, 28);
+          .px2rem(margin-bottom, 26);
+          .team-cell-img{
+            .por;
+            .hid;
+            .px2rem(width, 88);
+            .px2rem(height, 88);
+            border-radius: 2px;
+            img{
+              .all;
+              .colcenter;
+              display: block;
+            }
+          }
+          .team-cell-name{
+            .ellipsis;
+            .flex1auto;
+            .px2rem(font-size, 38);
+            padding-left: 3%;
+            padding-right: 3%;
+            box-sizing: border-box;
+          }
+          .team-cell-member{
+            width: auto;
+            .px2rem(font-size, 32);
+            color: @aaa;
+            vertical-align: middle;
+            display: table-cell;
+          }
         }
-        .team-cell-txt{}
+        .team-cell-txt{
+          .ellipsis;
+          .px2rem(font-size, 32);
+          color: @aaa;
+        }
       }
+    }
+    .team-more{
+      .px2rem(padding-top, 28);
+      .px2rem(padding-bottom, 28);
+      .px2rem(font-size, 32);
+      .bor1px(@tc: transparent, @rc: transparent, @lc: transparent);
+      text-align: center;
+      color: @42b;
     }
   }
 }

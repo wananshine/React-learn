@@ -20,9 +20,9 @@ export function get(url) {
     var preUrl = '';
     return axios.get(url)
         .then((res)=>{
-            console.log('res', res)
+            console.log('api-res', res)
         }).catch((err)=>{
-            console.log('err', err)
+            console.log('api-err', err)
     })
 };
 
@@ -31,9 +31,21 @@ export function get2(url) {
     var preUrl = '';
     return axios.get(url)
         .then((res)=>{
-            console.log('res', res)
+            console.log('api-res', res)
         }).catch((err)=>{
-        console.log('err', err)
+        console.log('api-err', err)
+    })
+}
+
+export function get3(url, params) {
+    return new Promise((resolve, reject) => {
+        axios.get(url, {
+            params: params
+        }).then(res => {
+            resolve(res.data)
+        }).catch(err => {
+            reject(err)
+        })
     })
 }
 

@@ -2,46 +2,9 @@
   width: 7.1rem;
   margin: auto;
 }
-.nav-box {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  height: 47px;
-  box-sizing: border-box;
-  display: flex;
-  display: grid;
-  grid-template-columns: 46px auto 28px;
-}
-.nav-box .nav-logo {
-  width: 47px;
-  font-size: 0;
-  display: inline-block;
-  background-image: url("../images/logo_01.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.nav-box .nav-list {
-  padding-right: 0.28rem;
-  flex: 1;
-  box-sizing: border-box;
-  text-align: right;
-  height: 47px;
-}
-.nav-box .nav-list .nav-cell {
-  font-size: 0.29rem;
-  display: inline-block;
-  text-align: center;
-  padding-left: 10px;
-  line-height: 47px;
-  vertical-align: top;
-}
-.nav-box .nav-search {
-  width: 28px;
-  background-image: url("../images/search_01.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right 16px;
+.home {
+  width: 7.1rem;
+  margin: auto;
 }
 .bannerSwiper {
   width: 100%;
