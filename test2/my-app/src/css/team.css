@@ -14,7 +14,21 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-top: 0.62rem;
+  margin-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  zoom: 1;
+}
+.team-box .team-floor:before {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.team-box .team-floor:after {
+  content: " ";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
 }
 .team-box .team-floor .team-title {
   font-size: 0.38rem;
