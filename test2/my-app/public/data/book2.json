@@ -1,0 +1,283 @@
+{
+  "count": 8,
+  "start": 0,
+  "subject_collection_items": [{
+    "original_price": null,
+    "rating": {
+      "count": 245,
+      "max": 10,
+      "value": 9.0
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "陈嘉映 \/ 2018 \/ 中信出版社·新思文化",
+    "recommend_comment": "终于再版！国内读哲学跟着陈嘉映和邓晓芒读不会错！ —— 罗成的短评",
+    "id": "27139938",
+    "title": "哲学·科学·常识",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["中信出版社·新思文化"],
+    "info": "陈嘉映\/中信出版社·新思文化\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27139938\/",
+    "release_date": null,
+    "author": ["陈嘉映"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29624506.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27139938",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 146,
+      "max": 10,
+      "value": 8.8
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "翁昕 \/ 2018 \/ 未读·艺术家·北京联合出版公司",
+    "recommend_comment": "《卡瓦拉乔的三板斧》看了3遍，写得太好了~适合入门读者，故事精彩到过目不忘。 —— 蚂蚁君的短评",
+    "id": "30170099",
+    "title": "如何看懂艺术",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["未读·艺术家·北京联合出版公司"],
+    "info": "翁昕\/未读·艺术家·北京联合出版公司\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30170099\/",
+    "release_date": null,
+    "author": ["翁昕"],
+    "cover": {
+      "url": "https://img1.doubanio.com\/view\/subject\/l\/public\/s29721129.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30170099",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 322,
+      "max": 10,
+      "value": 8.4
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[英] 加文·普雷特-平尼 \/ 2018 \/ 译林出版社",
+    "recommend_comment": "每个人都该有一种他陶醉的事物，观察一只鸟，捕捉云，看起来可比那些实物收藏便宜健康得多呐！不管多简单、不上档次，能自得其乐就好！朵朵云翳不知名称，万千变幻尽消苍穹，立志也去做一个不专业的云彩收集者~ —— birds的短评",
+    "id": "27624390",
+    "title": "云彩收集者手册",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["译林出版社"],
+    "info": "[英] 加文·普雷特-平尼\/译林出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27624390\/",
+    "release_date": null,
+    "author": ["[英] 加文·普雷特-平尼"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29702964.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27624390",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 180,
+      "max": 10,
+      "value": 8.6
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "[美] 凯特·阿歇尔 \/ 2018 \/ 南海出版公司",
+    "recommend_comment": "现代人生活在城市中，却多少有点不识庐山真面目，本书算是这方面非常不错的科普读物了，以纽约为范本，将一座城图文并茂地解剖给读者看，让我们了解自己赖以生存的庞大工程。 —— 吞狐的短评",
+    "id": "27622170",
+    "title": "纽约：一座超级城市是如何运转的",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["南海出版公司"],
+    "info": "[美] 凯特·阿歇尔\/南海出版公司\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27622170\/",
+    "release_date": null,
+    "author": ["[美] 凯特·阿歇尔"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29690393.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27622170",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 104,
+      "max": 10,
+      "value": 9.2
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[英] 奥兰多·费吉斯 \/ 2018 \/ 四川人民出版社",
+    "recommend_comment": "保持开放性的思想和非功利的眼睛，看看世界的丰富性与复杂性 —— 脑仁味的草莓的短评",
+    "id": "27619602",
+    "title": "娜塔莎之舞",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["四川人民出版社"],
+    "info": "[英] 奥兰多·费吉斯\/四川人民出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27619602\/",
+    "release_date": null,
+    "author": ["[英] 奥兰多·费吉斯"],
+    "cover": {
+      "url": "https://img1.doubanio.com\/view\/subject\/l\/public\/s29682547.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27619602",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 5752,
+      "max": 10,
+      "value": 6.9
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "[美] 珍妮·罗森 \/ 2018 \/ 江苏凤凰文艺出版社",
+    "recommend_comment": "一个抑郁症患者的段子书 —— 慕容复的短评",
+    "id": "30155726",
+    "title": "高兴死了！！！",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["江苏凤凰文艺出版社"],
+    "info": "[美] 珍妮·罗森\/江苏凤凰文艺出版社\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30155726\/",
+    "release_date": null,
+    "author": ["[美] 珍妮·罗森"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29717612.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30155726",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 1327,
+      "max": 10,
+      "value": 8.6
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[美] 史明智 \/ 2018 \/ 上海译文出版社",
+    "recommend_comment": "因为阅历和知识的增长，也因为本来在念China Studies，这本书完全没有带给我四五年前读何伟的感觉，书中涉及的历史变迁、中国“问题”、个人故事、观点感悟都没有带给我一点点新的信息和新的感受。中国叙事中最引人入胜的两个主题就是“urbanization”和“marketization”，以及这两个运动中的人口变迁、带给人们的冲击、引发的社会问题，而这个主题下的非虚构（和学术著作）看得太多，已经看不出什么新意了。很多时候我觉得国内一篇优秀的新闻特稿都比史明智来得深刻。这大概是一本好书，不过已经不适合我读了。 —— MMQ的短评",
+    "id": "27116307",
+    "title": "长乐路",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["上海译文出版社"],
+    "info": "[美] 史明智\/上海译文出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27116307\/",
+    "release_date": null,
+    "author": ["[美] 史明智"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29651373.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27116307",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 297,
+      "max": 10,
+      "value": 8.2
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "[日] 原田刚 文 筒井则行 绘 \/ 2018 \/ 后浪丨浙江人民出版社",
+    "recommend_comment": "#猝不及防的泪目#\n#想起朋友说他小时候陪妈妈去早市卖水煎饼当时老大不情愿长大回想起来都是甜甜的味道#\n#我小时候也就跟父母去收过土豆掰过苞米拔过萝卜割过韭菜也没做过什么特别的#\n以及，同事们围绕着原书名——《像鬼一样厉害的妈妈非得让我去卖茄子，我可是小学生啊！》——进行了文案训练，收效甚好。 —— 黑🌈暗🌈塔的短评",
+    "id": "30144196",
+    "title": "妈妈让我卖茄子",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["后浪丨浙江人民出版社"],
+    "info": "[日] 原田刚 文\/筒井则行 绘\/后浪丨浙江人民出版社\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30144196\/",
+    "release_date": null,
+    "author": ["[日] 原田刚 文"],
+    "cover": {
+      "url": "https://img1.doubanio.com\/view\/subject\/l\/public\/s29714459.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30144196",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }],
+  "total": 100,
+  "subject_collection": {
+    "subject_count": 100,
+    "description": "",
+    "url": "https:\/\/m.douban.com\/app_topic\/book_nonfiction",
+    "uri": "douban:\/\/douban.com\/subject_collection\/book_nonfiction",
+    "cover_url": "",
+    "name": "最受关注的非虚构类图书",
+    "id": "book_nonfiction",
+    "display": {
+      "layout": "list"
+    },
+    "sharing_url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/subject_collection\/book_nonfiction\/"
+  }
+}

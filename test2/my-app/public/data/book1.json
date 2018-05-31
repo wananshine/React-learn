@@ -1,0 +1,283 @@
+{
+  "count": 8,
+  "start": 0,
+  "subject_collection_items": [{
+    "original_price": null,
+    "rating": {
+      "count": 361,
+      "max": 10,
+      "value": 8.8
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[英] 毛姆 \/ 2018 \/ 理想国丨广西师范大学出版社",
+    "recommend_comment": "每次读毛姆的小说，总是特别愉悦的。这本书多数小说以“我”的限知视角来讲述，但并不严格遵循，有时候“我”不在场，故事还在进行，忽然变成全知视角。这个视角过渡毛姆懒得处理。再一次叹服毛姆圆融流畅的叙事技巧，张弛有度的节奏感，看起来容易，写起来难。 —— 邓安庆的短评",
+    "id": "27167267",
+    "title": "人性的因素",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["理想国丨广西师范大学出版社"],
+    "info": "[英] 毛姆\/理想国丨广西师范大学出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27167267\/",
+    "release_date": null,
+    "author": ["[英] 毛姆"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29588731.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27167267",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 1094,
+      "max": 10,
+      "value": 8.7
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "[美] 伍绮诗 \/ 2018 \/ 江苏凤凰文艺出版社",
+    "recommend_comment": "不愧是伍绮诗。我想，直译的话，也可以翻译为遍地小火，不过可能感觉怪怪的。小小小小的火这个名字还是蛮棒的。整个故事非常值得深思。像无声告白一样，从家庭的变动写出了每个人的人生。666 —— 安稳少年铭铭夏的短评",
+    "id": "30155720",
+    "title": "小小小小的火",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["江苏凤凰文艺出版社"],
+    "info": "[美] 伍绮诗\/江苏凤凰文艺出版社\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30155720\/",
+    "release_date": null,
+    "author": ["[美] 伍绮诗"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29745380.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30155720",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 1491,
+      "max": 10,
+      "value": 8.7
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "许先哲 \/ 2018 \/ 北京联合出版公司",
+    "recommend_comment": "国漫里都是汉人狡诈多计，蒙回突契真性情，改不了了。 —— Tsang Qhuang的短评",
+    "id": "30163844",
+    "title": "镖人",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["北京联合出版公司"],
+    "info": "许先哲\/北京联合出版公司\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30163844\/",
+    "release_date": null,
+    "author": ["许先哲"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29725620.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30163844",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 432,
+      "max": 10,
+      "value": 8.1
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "苏方 \/ 2018 \/ 理想国 | 广西师范大学出版社",
+    "recommend_comment": "男朋友买来，我先看为敬。在朋友家见过两回苏方老师，但我的容量太小，怎么也想不起来她是个怎样的人。对现实中的人与人事，我总是不熟悉。这样也好，就看故事。看得津津有味。在这样一个起太早干活的早晨，等待甲乙方回应的间歇，坐坐躺躺，看完整本书。愚钝如一面我，看完竟不免紧张；聪慧如一面我，看完也难掩惶惑。忍不住跑去隔壁问了一些傻问题。但也忍住了不去问更傻的那些。一个被吵醒的男人，他能给出什么好答案呢。他气鼓鼓地，他学我。 —— 淳子小姐的短评",
+    "id": "30167658",
+    "title": "一些时刻",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["理想国 | 广西师范大学出版社"],
+    "info": "苏方\/理想国 | 广西师范大学出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30167658\/",
+    "release_date": null,
+    "author": ["苏方"],
+    "cover": {
+      "url": "https://img1.doubanio.com\/view\/subject\/l\/public\/s29714417.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30167658",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 342,
+      "max": 10,
+      "value": 8.8
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-4"],
+    "card_subtitle": "[法] 本杰明·雷内 编绘 \/ 2018 \/ 后浪丨花山文艺出版社",
+    "recommend_comment": "超级无敌可爱！作者笔触很活泼，表情、动作实在画得太到位了，高兴、软弱、委屈、生气••••••都表现得活灵活现，让人忍俊不禁。也正是因为这种活泼的笔触，让这本书读起来仿佛有声，就，这不是一本静态的书，你是可以听到叽叽呱呱的声音，并看到画面在流淌的！ —— 陈老板的短评",
+    "id": "30133852",
+    "title": "坏狐狸",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["后浪丨花山文艺出版社"],
+    "info": "[法] 本杰明·雷内 编绘\/后浪丨花山文艺出版社\/2018-4",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/30133852\/",
+    "release_date": null,
+    "author": ["[法] 本杰明·雷内 编绘"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29680575.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/30133852",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 7351,
+      "max": 10,
+      "value": 7.6
+    },
+    "actions": ["可阅读"],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[日] 村上春树 \/ 2018 \/ 上海译文出版社",
+    "recommend_comment": "译文让人想撕书，明白？ —— 头马的短评",
+    "id": "27199470",
+    "title": "刺杀骑士团长",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["上海译文出版社"],
+    "info": "[日] 村上春树\/上海译文出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27199470\/",
+    "release_date": null,
+    "author": ["[日] 村上春树"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29687411.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27199470",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 770,
+      "max": 10,
+      "value": 8.7
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[马来西亚] 黄锦树 \/ 2018 \/ 后浪丨四川人民出版社",
+    "recommend_comment": "这不是你去过的东南亚，而是更古早的老南洋。在老树与老树的繁茂密匝里，暗影彤彤尽是魔魅，枝干横生汁液蒸腾，渺小人类陷入在这巨大蒸腾循环里，浅浅的呼吸像任何一种小兽。随时有什么死去，想靠生殖来再还魂，靠梦境来再入世。从叶片缝隙漏下偶尔的平淡天光，把“雨”从梦外下到梦里。有人在梦外离乡，有人在梦里离世。视觉意象重曝叠片，时间序列被颠倒置换，也是时间，也是故事→“不仅会流逝，而且回卷，像涨潮时的浪。” —— 珍妮的肖像的短评",
+    "id": "27192538",
+    "title": "雨",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["后浪丨四川人民出版社"],
+    "info": "[马来西亚] 黄锦树\/后浪丨四川人民出版社\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27192538\/",
+    "release_date": null,
+    "author": ["[马来西亚] 黄锦树"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29679753.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27192538",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }, {
+    "original_price": null,
+    "rating": {
+      "count": 804,
+      "max": 10,
+      "value": 8.0
+    },
+    "actions": [],
+    "date": null,
+    "year": ["2018-3"],
+    "card_subtitle": "[英] 珍妮特·温特森 \/ 2018 \/ 北京联合出版公司",
+    "recommend_comment": "JW —— 半身的短评",
+    "id": "27622171",
+    "title": "橘子不是唯一的水果",
+    "label": null,
+    "type": "book",
+    "description": "",
+    "price": null,
+    "press": ["北京联合出版公司"],
+    "info": "[英] 珍妮特·温特森\/北京联合出版公司\/2018-3",
+    "url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/book\/27622171\/",
+    "release_date": null,
+    "author": ["[英] 珍妮特·温特森"],
+    "cover": {
+      "url": "https://img3.doubanio.com\/view\/subject\/l\/public\/s29682706.jpg",
+      "width": 0,
+      "shape": "rectangle",
+      "height": 0
+    },
+    "uri": "douban:\/\/douban.com\/book\/27622171",
+    "subtype": "",
+    "reviewer_name": "",
+    "null_rating_reason": ""
+  }],
+  "total": 100,
+  "subject_collection": {
+    "subject_count": 100,
+    "description": "",
+    "url": "https:\/\/m.douban.com\/app_topic\/book_fiction",
+    "uri": "douban:\/\/douban.com\/subject_collection\/book_fiction",
+    "cover_url": "",
+    "name": "最受关注的虚构类图书",
+    "id": "book_fiction",
+    "display": {
+      "layout": "list"
+    },
+    "sharing_url": "https:\/\/www.douban.com\/doubanapp\/dispatch?uri=\/subject_collection\/book_fiction\/"
+  }
+}

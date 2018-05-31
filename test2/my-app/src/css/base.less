@@ -165,3 +165,20 @@
 .px2rem(@name, @px){
     @{name}: @px / @base2FontSize * 1rem;
 }
+
+.scrollbar(@wi: 0px){
+  &::-webkit-scrollbar {
+    width: @wi;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  /* Scrollable element */
+  .some-element::webkit-scrollbar {
+  }
+}
