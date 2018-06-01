@@ -99,6 +99,10 @@
   transform: translate(-50%, -50%);
 }
 .movie-box .movie-floor .movie-layer .movie-list .movie-cell .movie-name {
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-top: 0.15rem;
   font-size: 0.28rem;
   text-align: center;

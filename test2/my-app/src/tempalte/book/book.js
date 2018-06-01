@@ -11,7 +11,7 @@ import {get3} from "../../api/api";
 
 
 
-//最受关注的图书|虚构类
+//最受关注的图书|虚构类   start
 class BookFiction extends React.Component{
 
     constructor(props){
@@ -61,10 +61,11 @@ class BookFiction extends React.Component{
         )
     }
 }
+//最受关注的图书|虚构类   end
 
 
 
-//最受关注的他图书|非虚构类
+//最受关注的他图书|非虚构类   start
 class BookNonfiction extends React.Component{
 
     constructor(props){
@@ -100,7 +101,9 @@ class BookNonfiction extends React.Component{
         const liShow = book2.subject_collection_items.map((cell, index) =>{
             return(
                 <li className="book-cell" key={index}>
-                    <div className="book-img"><img src={cell.cover.url} /></div>
+                    <div className="book-img" style={{backgroundImage: "url("+cell.cover.url+")"}}>
+                        {/*<img src={cell.cover.url} />*/}
+                    </div>
                     <div className="book-title">{cell.title}</div>
                 </li>
             )
@@ -116,18 +119,57 @@ class BookNonfiction extends React.Component{
         )
     }
 }
+//最受关注的他图书|非虚构类   end
 
 
-//书店
+
+
+//书店  start
 class BookStore extends  React.Component{
-    render(){
-        return(
-            <section>
 
+    constructor(props){
+        super(props)
+        this.state = {
+            date: new Date(),
+            book3: {
+                header: {},
+                subject_collection: {},
+                subject_collection_items: []
+            },
+        }
+    }
+
+    componentDidMount(){
+        get3('../data/book3.json',{})
+            .then((res)=>{
+                this.setState({
+                    book3: res
+                })
+            })
+            .catch((err)=>{
+
+        })
+    }
+
+
+    componentWillUnmount(){}
+
+
+    render(){
+        const book3 = this.state.book3;
+        console.log('book3',book3)
+        // const liShow = book3
+        return(
+            <section className="book-floor">
+                <dl className="book-up">
+                    <dt></dt>
+                </dl>
+                <div className="book-down"></div>
             </section>
         )
     }
 }
+//书店  end
 
 
 

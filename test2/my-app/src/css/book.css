@@ -3,11 +3,19 @@
   margin: auto;
 }
 .book {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   width: 7.1rem;
   margin: auto;
 }
+.book .book-floor {
+  padding-bottom: 0.2rem;
+}
 .book .book-floor .book-name {
-  font-size: 0.38rem;
+  font-size: 0.3rem;
+  margin-top: 0.18rem;
+  margin-bottom: 0.2rem;
 }
 .book .book-floor .book-list {
   width: 100%;
@@ -19,18 +27,9 @@
   justify-content: space-between;
   align-items: center;
   overflow-x: scroll;
-  /* Scrollable element */
 }
-.book .book-floor .book-list ::-webkit-scrollbar {
+.book .book-floor .book-list::-webkit-scrollbar {
   width: 0px;
-}
-.book .book-floor .book-list ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-.book .book-floor .book-list ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .book .book-floor .book-list .book-cell {
   width: 100%;
@@ -40,13 +39,19 @@
   flex-basis: auto;
   flex-shrink: 1;
   flex-shrink: 0;
-  width: 2.6rem;
+  width: 1.8rem;
+}
+.book .book-floor .book-list .book-cell:not(:nth-last-of-type(1)) {
+  margin-right: 0.16rem;
 }
 .book .book-floor .book-list .book-cell .book-img {
   width: 100%;
   position: relative;
   overflow: hidden;
   padding: 72% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .book .book-floor .book-list .book-cell .book-img img {
   width: 100%;
@@ -58,6 +63,13 @@
   display: block;
 }
 .book .book-floor .book-list .book-cell .book-title {
-  font-size: 0.26rem;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.28rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.12rem;
+  text-align: center;
 }
 /*# sourceMappingURL=book.css.map */

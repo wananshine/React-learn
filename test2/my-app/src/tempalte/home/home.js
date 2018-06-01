@@ -9,7 +9,7 @@ import Navlist from '../ssi/nav';
 
 /**************************************************/
 
-import { get, get2 } from '../../api/api'
+import { get, get2, get3 } from '../../api/api'
 
 
 const movieHot = [
@@ -40,62 +40,6 @@ const tabKey = {
     tbTeam:  "Team"
 }
 
-//nav
-// function Navlist(props) {
-//     const tabName = props.tabName;
-//     let tabMovie = "#2384E8";
-//     let tabBook  = {
-//         color: "#9F7860",
-//         // fontSize: 10,
-//         // backgroundColor:'red',
-//         WebkitTransition: 'all', // 注意这里的首字母'W'是大写
-//         msTransition: 'all' // 'ms'是唯一一个首字母需要小写的浏览器前缀
-//     };
-//     let tabTeam = "#2AB8CC";
-//     return (
-//         <nav className="nav-box">
-//             <div className="nav-logo"></div>
-//             <div className="nav-list">
-//                 <a className="nav-cell" style={{color: tabMovie }}>{tabName.tabMovie}</a>
-//                 <a className="nav-cell" style={tabBook}           >{tabName.tabBook}</a>
-//                 <a className="nav-cell" style={{color: '#E4A813'}}>{tabName.tabRadio}</a>
-//                 <a className="nav-cell" style={{color: tabTeam}}  >{tabName.tabTeam}</a>
-//             </div>
-//             <div className="nav-search"  style={{backgroundImage: 'url('+require('./images/search_01.png')+')'}}></div>
-//         </nav>
-//     )
-// }
-
-//Navlist2
-class Navlist2 extends React.Component{
-
-
-    render(){
-        let tabMovie = "#2384E8";
-        let tabBook  = {
-            color: "#9F7860",
-            fontSize: 10,
-            backgroundColor:'red',
-            WebkitTransition: 'all', // 注意这里的首字母'W'是大写
-            msTransition: 'all' // 'ms'是唯一一个首字母需要小写的浏览器前缀
-        };
-        let tabTeam = "#2AB8CC";
-
-        return (
-            <nav className="nav-box">
-                <div className="nav-logo"></div>
-                <div className="nav-list">
-                    <a className="nav-cell" style={{color: tabMovie }}>电影</a>
-                    <a className="nav-cell" style={tabBook}>图书</a>
-                    <a className="nav-cell" style={{color: '#E4A813'}}>广播</a>
-                    <a className="nav-cell" style={{color: tabTeam}}>小组</a>
-                    {/*style={{backgroundImage: 'url('+require('../../images/search_01.png')+')'}}*/}
-                </div>
-                <div className="nav-search"  style={{backgroundImage: 'url('+require('../../images/search_01.png')+')'}}></div>
-            </nav>
-        )
-    }
-}
 
 
 //bannerList
@@ -119,13 +63,21 @@ class Moviehot extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {date: new Date()};
+        this.state = {
+            date: new Date(),
+            movieHot: {
+                subject_collection: {},
+                subject_collection_items: []
+            }
+        };
     }
 
     componentDidMount() {
-        get('../data/movie.json')
+        get3('../data/movie.json')
             .then((data)=>{
-                console.log('res',data)
+                this.setState({
+                    movieHot: data
+                })
             })
             .catch((err)=>{
                 console.log('err',err)
@@ -137,8 +89,10 @@ class Moviehot extends React.Component{
     }
 
     render(){
+        let movieList1 = this.state.movieHot;
+        console.log('res1',movieList1)
         let movieList = this.props.movieHot;
-        const listItems = movieList.map((item, index) =>
+        const listItems = movieList1.subject_collection_items.map((item, index) =>
             // Correct! Key should be specified inside the array.
             <ListItem key={index} value={item} />
         );
@@ -146,17 +100,12 @@ class Moviehot extends React.Component{
             <section className="movie-box">
                 <div className="movie-floor">
                     <div className="movie-title">
-                        <span className="movie-txt">影院热映</span>
+                        <span className="movie-txt">{movieList1.subject_collection.name}</span>
                         <span className="movie-more">更多</span>
                     </div>
                     <div className="movie-layer">
                         <ul className="movie-list">
                             {listItems}
-                            {/*<li className="movie-cell">*/}
-                            {/*<div className="movie-img"><img src={require('./images/p1.jpg')} /></div>*/}
-                            {/*<div className="movie-name"></div>*/}
-                            {/*<div className="movie-star"></div>*/}
-                            {/*</li>*/}
                         </ul>
                     </div>
                 </div>
@@ -168,9 +117,11 @@ function ListItem(props) {
     const value = props.value;
     return (
         <li className="movie-cell">
-            <div className="movie-img"><img src={value.movieimg} /></div>
-            <div className="movie-name">{value.moviename}</div>
-            <div className="movie-star"></div>
+            <a href={value.url}>
+                <div className="movie-img"><img src={value.cover.url} /></div>
+                <div className="movie-name">{value.title}</div>
+                <div className="movie-star"></div>
+            </a>
         </li>
     )
 }

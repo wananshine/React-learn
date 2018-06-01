@@ -64,10 +64,10 @@ class ArticleBox extends  React.Component{
         return(
             <main>
                 <Switch>
-                    <Route exact path='/' component={Homepage}/>
+                    <Route exact path='/'   component={Homepage}/>
                     {/* both /roster and /roster/:number begin with /roster */}
-                    <Route path='/roster' component={Bookpage}/>
-                    <Route path='/schedule' component={Bookpage}/>
+                    <Route path='/bookpage'     component={Bookpage}/>
+                    <Route path='/bookpage'     component={Bookpage}/>
                     <Route path='/teampage' component={TeamPage}/>
                 </Switch>
             </main>
