@@ -46,12 +46,18 @@
         .px2rem(font-size, 32);
       }
       .movie-more{
+
         height: 45px;
         line-height: 45px;
         float: right;
         //display: inline-block;
         color: @42b;
         .px2rem(font-size, 32);
+        .movie-to{
+          .all;
+          height: @full;
+          display: block;
+        }
       }
     }
     .movie-layer{
@@ -161,4 +167,19 @@
       }
     }
   }
+}
+
+
+
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
 }

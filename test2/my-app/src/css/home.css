@@ -56,6 +56,13 @@
   color: #42bd56;
   font-size: 0.32rem;
 }
+.movie-box .movie-floor .movie-title .movie-more .movie-to {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: block;
+}
 .movie-box .movie-floor .movie-layer {
   overflow: hidden;
   overflow-x: scroll;
@@ -183,5 +190,16 @@
 }
 .movie-box .movie-floor .movie-layer .movie-types .movie-tp:not(:nth-of-type(even)) {
   border-right: solid 1px #eee;
+}
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel .slick-slide h3 {
+  color: #fff;
 }
 /*# sourceMappingURL=home.css.map */

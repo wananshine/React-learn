@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.6.3",
     "axios": "^0.18.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-pullload": "^1.1.0",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
@@ -15,5 +18,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-plugin-import": "^1.8.0"
+  },
+  "proxy": "http://api.douban.com/"
 }

@@ -1,0 +1,80 @@
+.container {
+  width: 7.1rem;
+  margin: auto;
+}
+.search {
+  width: 7.1rem;
+  margin: auto;
+}
+.search .search-layer .search-group {
+  display: table;
+  width: 100%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.search .search-layer .search-group .seach-control {
+  display: block;
+  width: 100%;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  outline: none;
+  text-indent: 5px;
+}
+.search .search-layer .search-group .seach-label {
+  font-size: 0.28rem;
+  display: table-cell;
+  text-align: center;
+}
+.search .search-layer .search-results {
+  position: relative;
+  overflow: hidden;
+}
+.search .search-layer .search-results .search-title {
+  padding: 5% 0px;
+  font-size: 0.32rem;
+}
+.search .search-layer .search-results .search-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search .search-layer .search-results .search-list .search-cell {
+  flex-grow: 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+  width: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+.search .search-layer .search-results .search-list .search-cell .search-img {
+  position: relative;
+  overflow: hidden;
+  height: 3.2rem;
+  background-color: #e9e8e8;
+}
+.search .search-layer .search-results .search-list .search-cell .search-img img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.search .search-layer .search-results .search-list .search-cell .search-name {
+  padding: 6% 0;
+  font-size: 0.3rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search .search-layer .search-results .search-list .search-cell a {
+  text-decoration: none;
+}
+.search .search-layer .ant-btn-primary {
+  background-color: #42bd56;
+  border-color: #42bd56;
+}
+/*# sourceMappingURL=search.css.map */

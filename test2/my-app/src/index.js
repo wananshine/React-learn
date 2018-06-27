@@ -1,61 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route  } from 'react-router-dom'
+import { BrowserRouter, HashRouter  } from 'react-router-dom'
+
 import axios from 'axios'
 
 import './css/reset.css';
+import 'antd/dist/antd.css';
 // import './index.css';
 
-import registerServiceWorker from './registerServiceWorker';
+
+import route from './router/index'
 
 
 import App from './App';
 import Navlist from './tempalte/ssi/nav';
-import Homepage from './tempalte/home/home';
-import Bookpage from './tempalte/book/book';
-import TeamPage from './tempalte/team/team';
+// import Homepage from './tempalte/home/home';
+// import Updatepage from './tempalte/home/update';
+// import Bookpage from './tempalte/book/book';
+// import TeamPage from './tempalte/team/team';
+// import searchPage from './tempalte/search/search';
 
-
-
-// ReactDOM.render(<App />, document.getElementById('root'));
+import registerServiceWorker from './registerServiceWorker';
 registerServiceWorker();
-
-
-// ReactDOM.render(
-//     <h1>Ping</h1>,
-//     document.querySelector("#root")
-// )
 
 /**************************************************/
 
 
 
 const tabKey = {
-    tbMovie: "movie",
-    tbBook:  "Book",
-    tbRadio: "aRadio",
+    tbMovie: "movie"  ,
+    tbBook:  "Book"   ,
+    tbRadio: "aRadio" ,
     tbTeam:  "Team"
-}
-
-
-//没添加路由
-class TagBox extends React.Component{
-
-    render(){
-        return(
-            <article className="">
-                <Homepage />
-            </article>
-        )
-    }
-}
-const ele = (
-    <div className="container">
-        <Navlist tabKey={tabKey}/>
-        <Homepage />
-    </div>
-)
-
+};
 
 
 //添加路由
@@ -63,24 +40,22 @@ class ArticleBox extends  React.Component{
     render(){
         return(
             <main>
-                <Switch>
-                    <Route exact path='/'   component={Homepage}/>
-                    {/* both /roster and /roster/:number begin with /roster */}
-                    <Route path='/bookpage'     component={Bookpage}/>
-                    <Route path='/bookpage'     component={Bookpage}/>
-                    <Route path='/teampage' component={TeamPage}/>
-                </Switch>
+                {route}
             </main>
         )
     }
 }
 
+
 const ContainerBox = ()=>(
     <div>
         <Navlist tabKey={tabKey}/>
-        <ArticleBox />
+        {/*<ArticleBox />*/}
+        <main>
+            {route}
+        </main>
     </div>
-)
+);
 
 
 
@@ -92,4 +67,4 @@ ReactDOM.render(
         <ContainerBox />
     </BrowserRouter>,
     document.querySelector("#root")
-)
+);

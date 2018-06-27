@@ -1,0 +1,82 @@
+
+@import (reference) url(base);
+@url:"../images/";
+
+.container{
+  .px2rem(width, 710);
+  margin: auto;
+}
+
+
+.search{
+  .container;
+  .search-layer{
+    .search-group{
+      display: table;
+      width: @full;
+      .px2rem(margin-top, 30);
+      .px2rem(margin-bottom, 10);
+      .seach-control{
+        display: block;
+        width: @full;
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid #000;
+        outline: none;
+        text-indent: 5px;
+      }
+      .seach-label{
+        .px2rem(font-size, 28);
+        display: table-cell;
+        text-align: center;
+      }
+    }
+
+    .search-results{
+      .por;
+      .hid;
+      .search-title{
+        padding: 5% 0px;
+        .px2rem(font-size, 32);
+      }
+
+      .search-list{
+        .flexbox;
+        flex-wrap: wrap;
+        .search-cell{
+          .flexauto;
+          .px2rem(width, 220);
+          .px2rem(margin-bottom, 20);
+          .search-img{
+            .por;
+            .hid;
+            .px2rem(height, 320);
+            background-color: #e9e8e8;
+            img{
+              .all;
+              height: @full;
+            }
+          }
+          .search-name{
+            padding: 6% 0;
+            .px2rem(font-size, 30);
+            text-align: center;
+            .ellipsis;
+          }
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .ant-btn-primary{
+      background-color: #42bd56;
+      border-color: #42bd56;
+    }
+
+  }
+}
+
+
+

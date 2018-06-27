@@ -1,0 +1,62 @@
+
+@import (reference) url(base);
+@url:"../images/";
+
+.container{
+  .px2rem(width, 710);
+  margin: auto;
+}
+
+
+.update{
+  .container;
+  .movie-box{
+
+    .movie-layer{
+      .por;
+      .hid;
+      .search-title{
+        padding: 5% 0px;
+        .px2rem(font-size, 32);
+      }
+
+      .movie-list{
+        .flexbox;
+        flex-wrap: wrap;
+        .movie-cell{
+          .flexauto;
+          .px2rem(width, 220);
+          .px2rem(margin-bottom, 20);
+          .movie-img{
+            .por;
+            .hid;
+            .px2rem(height, 320);
+            background-color: #e9e8e8;
+            img{
+              .all;
+              height: @full;
+            }
+          }
+          .movie-name{
+            padding: 6% 0;
+            .px2rem(font-size, 30);
+            text-align: center;
+            .ellipsis;
+          }
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .ant-btn-primary{
+      background-color: #42bd56;
+      border-color: #42bd56;
+    }
+
+  }
+}
+
+
+

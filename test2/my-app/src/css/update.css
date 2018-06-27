@@ -1,0 +1,60 @@
+.container {
+  width: 7.1rem;
+  margin: auto;
+}
+.update {
+  width: 7.1rem;
+  margin: auto;
+}
+.update .movie-box .movie-layer {
+  position: relative;
+  overflow: hidden;
+}
+.update .movie-box .movie-layer .search-title {
+  padding: 5% 0px;
+  font-size: 0.32rem;
+}
+.update .movie-box .movie-layer .movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.update .movie-box .movie-layer .movie-list .movie-cell {
+  flex-grow: 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+  width: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+.update .movie-box .movie-layer .movie-list .movie-cell .movie-img {
+  position: relative;
+  overflow: hidden;
+  height: 3.2rem;
+  background-color: #e9e8e8;
+}
+.update .movie-box .movie-layer .movie-list .movie-cell .movie-img img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.update .movie-box .movie-layer .movie-list .movie-cell .movie-name {
+  padding: 6% 0;
+  font-size: 0.3rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.update .movie-box .movie-layer .movie-list .movie-cell a {
+  text-decoration: none;
+}
+.update .movie-box .ant-btn-primary {
+  background-color: #42bd56;
+  border-color: #42bd56;
+}
+/*# sourceMappingURL=update.css.map */

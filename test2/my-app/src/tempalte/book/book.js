@@ -15,7 +15,7 @@ import {get3} from "../../api/api";
 class BookFiction extends React.Component{
 
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
             date: new Date(),
             book1: {
@@ -49,7 +49,7 @@ class BookFiction extends React.Component{
                     <div className="book-title">{cell.title}</div>
                 </li>
             )
-        })
+        });
 
         return(
             <section className="book-floor">
