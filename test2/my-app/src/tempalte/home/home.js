@@ -195,18 +195,81 @@ function ListItem(props) {
 
 //floor  即将上映
 class Comingsoon extends React.Component{
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = {}
+
+        this.state = {
+            date: new Date(),
+            movieSoon: {
+                subjects: []
+            }
+        };
     }
 
-    componentDidMount(){}
+    componentDidMount(){
+        get3('v2/movie/coming_soon')
+            .then((data)=>{
+                console.log('data',data)
+                this.setState({
+                    movieSoon: data
+                })
+            })
+            .catch((err)=>{
+                console.log('err',err)
+            })
+
+
+        get3('v2/movie/us_box')
+            .then((data)=>{
+                console.log('new_movies',data)
+                this.setState({
+
+                })
+            })
+            .catch((err)=>{
+                console.log('err',err)
+            })
+    }
 
     componentWillUnmount(){}
 
+    //更多电影
+    moreHandle(event){
+        console.log("更多正在上映电影");
+        // window.location.pathname='/home/updateHot'
+    }
+
     render(){
+        const movieSoon = this.state.movieSoon
+        const subjects = movieSoon.subjects.slice(0,8);
+        console.log('movieSoon',movieSoon)
+        const liItems = subjects.map((item, index)=>{
+            return (
+                <li className="movie-cell" key={index}>
+                    <a href={item.alt}>
+                        <div className="movie-img"><img src={item.images.small} /></div>
+                        <div className="movie-name">{item.title}</div>
+                        <div className="movie-star"></div>
+                    </a>
+                </li>
+            )
+        })
         return(
-            <div></div>
+            <section className="movie-box">
+                <div className="movie-floor">
+                    <div className="movie-title">
+                        <span className="movie-txt">{movieSoon.title}</span>
+                        <span className="movie-more" onClick={this.moreHandle.bind(this)}>
+                            <Link className="movie-to" to={`/home/updateSoon`} >更多</Link>
+                        </span>
+                    </div>
+                    <div className="movie-layer">
+                        <ul className="movie-list">
+                            {liItems}
+                        </ul>
+                    </div>
+                </div>
+            </section>
         )
     }
 }
@@ -398,74 +461,7 @@ class Moviefind extends React.Component{
     }
 }
 
-const BasicExample = () => (
-    <Router>
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/topics">Topics</Link>
-                </li>
-            </ul>
 
-            <hr />
-
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
-        </div>
-    </Router>
-);
-
-const Home = () => (
-    <div>
-        <h2>Home</h2>
-    </div>
-);
-
-const About = () => (
-    <div>
-        <h2>About</h2>
-    </div>
-);
-
-const Topics = ({ match }) => {
-    console.log({ match })
-    return(
-        <div>
-            <h2>Topics</h2>
-            <ul>
-                <li>
-                    <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-                </li>
-                <li>
-                    <Link to={`${match.url}/components`}>Components</Link>
-                </li>
-                <li>
-                    <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-                </li>
-            </ul>
-
-            <Route path={`${match.url}/:topicId`} component={Topic} />
-            <Route
-                exact
-                path={match.url}
-                render={() => <h3>Please select a topic.</h3>}
-            />
-        </div>
-    )
-};
-
-const Topic = ({ match }) => (
-    <div>
-        <h3>{match.params.topicId}</h3>
-    </div>
-);
 
 
 
@@ -572,13 +568,12 @@ export default class Homepage extends React.Component{
                 {/*<Navlist tabKey={tabKey}/>*/}
                 <Tabnav />
                 <Bannerlist />
-                <Moviehot movieHot={movieHot} />
-                <Moviefree />
-                <Movienew />
-                {/*<Topics />*/}
-                {/*<BasicExample />*/}
-                <Moviefind />
-                <Movietype />
+                {/*<Moviehot movieHot={movieHot} />*/}
+                {/*<Comingsoon />*/}
+                {/*<Moviefree />*/}
+                {/*<Movienew />*/}
+                {/*<Moviefind />*/}
+                {/*<Movietype />*/}
             </div>
         )
     }

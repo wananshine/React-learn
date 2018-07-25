@@ -35,7 +35,7 @@ function Navlist(props) {
             <div className="nav-list">
                 <span className="nav-cell" data-key={tabKey.tbMovie}  ><Link to='/'         style={{color: tabMovie }}>{tabName.tMovie}</Link></span>
                 <span className="nav-cell" data-key={tabKey.tbBook}   ><Link to='/bookpage' style={tabBook}>{tabName.tBook}</Link></span>
-                <span className="nav-cell" data-key={tabKey.tabRadio} ><Link to='/bookpage' style={{color: '#E4A813'}}>{tabName.tRadio}</Link></span>
+                <span className="nav-cell" data-key={tabKey.tRadio}   ><Link to='/bookpage' style={{color: '#E4A813'}}>{tabName.tRadio}</Link></span>
                 <span className="nav-cell" data-key={tabKey.tbTeam}   ><Link to='/teampage' style={{color: tabTeam}}>{tabName.tTeam}</Link></span>
             </div>
             

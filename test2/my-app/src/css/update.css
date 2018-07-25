@@ -10,9 +10,9 @@
   position: relative;
   overflow: hidden;
 }
-.update .movie-box .movie-layer .search-title {
+.update .movie-box .movie-layer .movie-title {
   padding: 5% 0px;
-  font-size: 0.32rem;
+  font-size: 0.36rem;
 }
 .update .movie-box .movie-layer .movie-list {
   display: flex;

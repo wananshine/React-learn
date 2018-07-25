@@ -13,6 +13,7 @@ import Updatepage from '../tempalte/home/update'
 import Bookpage from '../tempalte/book/book'
 import TeamPage from '../tempalte/team/team'
 import searchPage from '../tempalte/search/search';
+import examPage from '../tempalte/example/exam1'
 
 /**************************************************/
 

@@ -4,6 +4,7 @@ import { Carousel } from 'antd';
 import Navlist from '../ssi/nav';
 
 import { get, get2, get3 } from '../../api/api'
+import { postJSON, getJSON } from '../../api/api2'
 /**************************************************/
 
 
@@ -28,27 +29,81 @@ class Update extends React.Component{
 
     //请求正在热映接口
     moreTheaters(start,count){
-        const moreParams = this.props.moreParams;
         //in_theaters
-        get3('../v2/movie/in_theaters?start='+start+'&count='+count)
-            .then((data)=>{
-                if(start === 0){
-                    this.setState({
-                        moreData: data,
-                        total: data.total
-                    })
-                }else{
-                    this.setState({
-                        total: data.total,
-                        moreData: {
-                            subjects: this.state.moreData.subjects.concat(data.subjects),
+        const moreParams = this.props.moreParams;
+        console.log('type:',moreParams)
+        switch (moreParams) {
+            case 'updateHot':
+                //热门
+                get3('../v2/movie/in_theaters?start='+start+'&count='+count)
+                    .then((data)=>{
+                        if(start === 0){
+                            this.setState({
+                                moreData: data,
+                                total: data.total
+                            })
+                        }else{
+                            this.setState({
+                                total: data.total,
+                                moreData: {
+                                    subjects: this.state.moreData.subjects.concat(data.subjects),
+                                }
+                            })
                         }
                     })
-                }
-            })
-            .catch((err)=>{
-                console.log('err',err)
-            })
+                    .catch((err)=>{
+                        console.log('err',err)
+                    })
+                break;
+            case 'updateSoon':
+                //即将 shang-ying
+                get3('../v2/movie/coming_soon?start='+start+'&count='+count)
+                    .then((data)=>{
+                        if(start === 0){
+                            this.setState({
+                                moreData: data,
+                                total: data.total
+                            })
+                        }else{
+                            this.setState({
+                                total: data.total,
+                                moreData: {
+                                    subjects: this.state.moreData.subjects.concat(data.subjects),
+                                }
+                            })
+                        }
+                    })
+                    .catch((err)=>{
+                        console.log('err',err)
+                    })
+                break;
+            case 'updateFree':
+                //免费
+                get3('../v2/movie/weekly?start='+start+'&count='+count)
+                    .then((data)=>{
+                        if(start === 0){
+                            this.setState({
+                                moreData: data,
+                                total: data.total
+                            })
+                        }else{
+                            this.setState({
+                                total: data.total,
+                                moreData: {
+                                    subjects: this.state.moreData.subjects.concat(data.subjects),
+                                }
+                            })
+                        }
+                    })
+                    .catch((err)=>{
+                        console.log('err',err)
+                    })
+                break;
+            default:
+            //n 与 case 1 和 case 2 不同时执行的代码
+                break;
+        }
+
     }
 
     //获取滚动条在Y轴上的滚动距离
@@ -90,9 +145,17 @@ class Update extends React.Component{
 
 
     componentDidMount(){
+
+        console.log('getJSON',getJSON)
+        getJSON('../v2/movie/in_theaters',{}).then((data)=>{
+            console.log('getJSON',JSON.parse(data))
+        }).catch((err)=>{
+            console.log('getJSON error',err)
+        })
+
         window.onscroll = ()=>{
             console.log(this.state.start,this.state.moreData.subjects.length,this.state.total,this.getScrollHeight(), this.getScrollTop(), this.getWindowHeight())
-            if(this.getScrollHeight() == this.getScrollTop() + this.getWindowHeight() && this.state.moreData.subjects.length<=this.state.total){
+            if(this.getScrollHeight() == this.getScrollTop() + this.getWindowHeight() && this.state.moreData.subjects.length<this.state.total){
                 console.log("正在加载。。。。",this.state.start);
                 this.setState({
                     start: this.state.start + 20
@@ -105,25 +168,7 @@ class Update extends React.Component{
         console.log(1,this.props)
         this.moreTheaters(this.state.start,this.state.count);
 
-        //in_theaters
-        // switch (moreParams) {
-        //     case 'updateHot':
-        //         this.more1();
-        //         break;
-        //     case 'updateFree':
-        //         get3('v2/movie/in_theaters')
-        //             .then((data)=>{
-        //                 this.setState({
-        //                     moreData: data
-        //                 })
-        //             })
-        //             .catch((err)=>{
-        //                 console.log('err',err)
-        //             })
-        //         break;
-        //     default:
-        //         //n 与 case 1 和 case 2 不同时执行的代码
-        // }
+
     }
 
 
@@ -169,9 +214,12 @@ class Update extends React.Component{
         return(
             <section className="movie-box">
                 <div className="movie-layer">
-                   <ul className="movie-list">
-                       {listItems}
-                   </ul>
+                    <h5 className="movie-title">
+                        <span className="movie-txt">{moreData.title}</span>
+                    </h5>
+                    <ul className="movie-list">
+                        {listItems}
+                    </ul>
                 </div>
             </section>
         )

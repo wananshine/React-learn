@@ -1,18 +1,1 @@
-.por {
-  position: relative;
-}
-.poa {
-  position: absolute;
-}
-.pof {
-  position: fixed;
-}
-.hid {
-  overflow: hidden;
-}
-.all {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-/*# sourceMappingURL=base.css.map */
+.por{position:relative}.poa{position:absolute}.pof{position:fixed}.hid{overflow:hidden}.ellipsis{overflow:hidden;position:relative;text-overflow:ellipsis;white-space:nowrap}.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;word-break:break-all}.flexbox{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center}.flexitem{flex-grow:0;flex-basis:1px;flex-shrink:1}.flexauto{flex-grow:0;flex-basis:auto;flex-shrink:1}.flex1auto{flex-grow:1;flex-basis:auto;flex-shrink:1}.flex1{flex:1}.clearfix{zoom:1}.clearfix:before{content:" ";clear:both;display:table}.clearfix:after{content:" ";clear:both;height:0;visibility:hidden;display:block}.colcenter{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.all{width:100%;position:relative;overflow:hidden}
